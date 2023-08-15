@@ -78,7 +78,7 @@ model = dict(
 
 ### （2）选定type=”ImageClassifier“后，对backbone，neck，head进行设置，可使用诸多主干网络，具体使用
 
-设置查看api文档。特别neck涉及loss的设置，当没有相关loss时需要具体设计，例如设计了一个GaussSmoothLoss，那么需要在mmpretrain目录下创建一个新的loss的py文件，类比其他loss文件输出保持一致，输入的形式也要确定，编写完成后，需要将这个loss类注册到loss目录下的__init__.py文件中。
+设置查看api文档。特别head涉及loss的设置，当没有相关loss时需要具体设计，例如设计了一个GaussSmoothLoss，那么需要在mmpretrain目录下创建一个新的loss的py文件，类比其他loss文件输出保持一致，输入的形式也要确定，编写完成后，需要将这个loss类注册到loss目录下的__init__.py文件中。
 
 ```
 from .asymmetric_loss import AsymmetricLoss, asymmetric_loss
