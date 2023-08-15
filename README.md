@@ -546,7 +546,7 @@ train_dataloader = dict(dataset=dict(pipeline=train_pipeline))
 
 ## 1.数据集获取
 
-进入大赛官网：https://tianchi.aliyun.com/competition/entrance/532092/information获取原始数据
+进入大赛官网：https://tianchi.aliyun.com/competition/entrance/532092/information 获取宠物年龄识别数据
 
 将数据集按上述方式进行组织。
 
