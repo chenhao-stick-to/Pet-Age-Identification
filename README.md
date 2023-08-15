@@ -78,7 +78,7 @@ model = dict(
 
 ### （2）选定type=”ImageClassifier“后，对backbone，neck，head进行设置，可使用诸多主干网络，具体使用
 
-设置查看api文档。特别neck涉及loss的设置，当没有相关loss时需要具体设计，例如设计了一个GaussSmoothLoss，那么需要在mmpretrain目录下创建一个新的loss的py文件，类比其他loss文件输出保持一致，输入的形式也要确定，编写完成后，需要将这个loss类注册到loss目录下的__init__.py文件中。
+设置查看api文档。特别head涉及loss的设置，当没有相关loss时需要具体设计，例如设计了一个GaussSmoothLoss，那么需要在mmpretrain目录下创建一个新的loss的py文件，类比其他loss文件输出保持一致，输入的形式也要确定，编写完成后，需要将这个loss类注册到loss目录下的__init__.py文件中。
 
 ```
 from .asymmetric_loss import AsymmetricLoss, asymmetric_loss
@@ -546,7 +546,7 @@ train_dataloader = dict(dataset=dict(pipeline=train_pipeline))
 
 ## 1.数据集获取
 
-进入大赛官网：https://tianchi.aliyun.com/competition/entrance/532092/information获取原始数据
+进入大赛官网：https://tianchi.aliyun.com/competition/entrance/532092/information 获取宠物年龄识别数据
 
 将数据集按上述方式进行组织。
 
